@@ -1,0 +1,35 @@
+body{
+    background-color: #f6f9fc;
+}
+
+div.main{
+    background-color: #BEBEBE;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+div.main left{
+    margin-left: 5px;
+    float: left;
+}
+
+div.main right{
+    margin-right: 5px;
+    float: right;
+}
+
+div.title{
+    background-color:#f6f9fc;
+    width: 250px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    margin:0 auto;
+}
+
+hr{
+    padding: 0px;
+    margin: 0px;
+}
