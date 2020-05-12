@@ -3,7 +3,7 @@ body{
 }
 
 div.main{
-    background-color: #BEBEBE;
+    background-color: #0099FF;
     height: 40px;
     line-height: 40px;
     font-size: 12px;
@@ -21,15 +21,29 @@ div.main right{
 }
 
 div.title{
+    clear:left;
     background-color:#f6f9fc;
-    width: 250px;
-    line-height: 60px;
     text-align: center;
     font-size: 30px;
-    margin:0 auto;
 }
 
-hr{
-    padding: 0px;
-    margin: 0px;
+sub{ 
+    font-size: 15px;
+}
+
+sub space{
+    margin-bottom: 10px;
+    background-color: aqua;
+}
+
+hr{ 
+    padding: 0px; margin: 20px;
+}
+
+img { 
+    max-width: 100%; 
+    display: block;
+    margin-bottom: 7px;
+    border-right-style : solid;
+    
 }

@@ -30,7 +30,6 @@
 
     <div class="title">
       가족사항 <hr>
-
     </div>
   </body>
 </html>
