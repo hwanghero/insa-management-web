@@ -3,21 +3,35 @@ body{
 }
 
 div.main{
+    position:relative;
     background-color: #0099FF;
-    height: 40px;
-    line-height: 40px;
-    font-size: 12px;
-    margin-bottom: 10px;
+    height: 60px;
+    font-size: 20px;
+    color: white;
 }
 
 div.main left{
-    margin-left: 5px;
-    float: left;
+    margin-left: 10px;
+    position:absolute;
+    top:50%;
+    transform: translate(0, -50%);
 }
 
 div.main right{
-    margin-right: 5px;
+    margin-right: 10px;
+    position:absolute;
+    top:50%;
+    right: 0%;
+    transform: translate(0, -50%);
     float: right;
+}
+
+div.main main{
+    position:absolute;
+    top:50%;
+    left: 48%;
+    transform: translate(0, -50%);
+    font-size: 30px;
 }
 
 div.title{
@@ -25,20 +39,46 @@ div.title{
     background-color:#f6f9fc;
     text-align: center;
     font-size: 30px;
-}
-
-sub{ 
-    font-size: 15px;
+    font-weight: lighter;
 }
 
 hr{ 
     padding: 0px; margin: 20px;
+    color: #0099FF;
+    border: thin solid #0099FF;
+    width: auto;
 }
 
 img { 
     max-width: 100%; 
-    display: block;
     margin-bottom: 7px;
     border-right-style : solid;
+}
+
+.center{
+    display:table;
+    width: 100%;
+}
+
+.sub{ 
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 15px;
+}
+
+.sub div{
+    display: inline-block;
+}
+
+.sub div *{
+    text-align: left;
+}
+
+.sub h1{
+    background-color: #0099FF;
+    color: white;
+    padding: 10px;
+    vertical-align: top;
     
 }
