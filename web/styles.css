@@ -31,11 +31,6 @@ sub{
     font-size: 15px;
 }
 
-sub space{
-    margin-bottom: 10px;
-    background-color: aqua;
-}
-
 hr{ 
     padding: 0px; margin: 20px;
 }

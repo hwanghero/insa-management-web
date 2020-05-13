@@ -28,7 +28,7 @@
       <hr>
     </div>
 
-    <div class="title">
+    <div class="title" style="margin-top: ">
       가족사항 <hr>
     </div>
   </body>
