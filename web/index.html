@@ -20,10 +20,10 @@
       로그인/회원가입
     </right>
     <main>
-      ^o^
+      이력서
     </main>
   </div>
-
+  <!-- 인사기본사항 -->
   <div class="title">
     <hr>
     인사기본사항
@@ -31,29 +31,22 @@
   </div>
   <div class="center">
     <div class="sub">
-      <div>
-        <h1 style="font-size: 20px; margin-bottom: 2px;">사진</b></h1><br>
-        <th><img src="img/notimg.png" alt="" loading="lazy" width="200px" height="200px"></th>
+      <div class="imgdiv">
+        <h1 style="font-size: 20px; margin-bottom: 5px;">사진</b></h1><br>
+        <th><img id="blah" src="img/notimg.png" alt="" loading="lazy" width="200px" height="200px"></th>
         <tr>
           <!-- 첫번째 줄 시작 -->
           <br>
-          <td><input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" width="200px" style="margin-left: 70px;">
+          <td><input id="imgInp" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" width="200px"
+              style="margin-left: 70px;">
           </td>
         </tr><!-- 첫번째 줄 끝 -->
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
       </div>
 
-      <div style="margin-left: 10px; ">
+      <div style="margin-left: 10px;" class="basicdiv">
         <h1 style="font-size: 20px; margin-bottom: 1px;">기본정보</h1> <br>
-        <div style="margin-left: 10px;">
-          성명(한글) <input type="text" style="width:70px; margin-bottom: 7px; ">
+        <div style="margin-left: 10px;" class="insabasic">
+          성명(한글) <input type="text" style="width:70px; margin-bottom: 7px; height: 20px;">
           <br>
           성명(한자) <input type="text" style="width:70px; margin-bottom: 7px;">
           <br>
@@ -63,33 +56,33 @@
             style="width:60px; margin-bottom: 7px; ">
           <br>
           성별
-          <select name="gender" style="margin-bottom: 7px;">
+          <select name="gender" style="margin-bottom: 7px; height: 22px;">
             <option value="남" selected="selected">남자</option>
             <option value="여">여자</option>
           </select>
           <br>
-          우편번호 <input id="zonecode" type="text" style="width:50px; margin-bottom: 7px;" readonly> <input type='button'
-            value='찾기' onclick='openDaumZipAddress();' />
+          우편번호 <input id="zonecode" type="text" style="width:50px; margin-bottom: 7px;" placeholder="" readonly> <input type='button'
+            value='찾기' style="height: 26px;" onclick='openDaumZipAddress();' />
           <br>
-          주소 <input id="address" type="text" style="width:180px; margin-bottom: 7px;" readonly> <input id="address_etc"
+          주소 <input id="address" type="text" style="width:180px; margin-bottom: 7px;" placeholder="주소 찾기 버튼으로 입력" readonly> <input id="address_etc"
             type="text" style="width:130px; margin-bottom: 7px;">
           <br>
           거주지 <input id="" type="text" style="width:200px; margin-bottom: 7px; ">
           <br>
-          연락처(휴대폰) <input type="text" style="width:70px; margin-bottom: 7px; ">
+          연락처(휴대폰) <input type="text" style="width:100px; margin-bottom: 7px;" placeholder=" - 없이 입력">
           <br>
-          연락처(집) <input type="text" style="width:70px; margin-bottom: 7px; ">
+          연락처(집) <input type="text" style="width:100px; margin-bottom: 7px; " placeholder=" - 없이 입력">
           <br>
-          이메일주소 <input type="text" style="width:70px; margin-bottom: 7px; ">
+          이메일주소 <input type="text" style="width:150px; margin-bottom: 7px; " placeholder=" @ 포함 입력">
           <br>
           <br>
           <br>
         </div>
       </div>
 
-      <div style="margin-left: 10px; margin-bottom: 0px;">
-        <h1 style="font-size: 20px; margin-bottom: 3px;">군복무 유무</h1><br>
-        <div style="margin-left: 10px; margin-bottom: 10px;">
+      <div style="margin-left: 10px; margin-bottom: 0px;" class="mildiv">
+        <h1 style="font-size: 20px; margin-bottom: 6px;">군복무 유무</h1><br>
+        <div style="margin-left: 10px; margin-bottom: 10px;" >
           병역(복무구분)
           <select name="gender" style="margin-bottom: 7px; height: 22px;">
             <option value="군필">군필</option>
@@ -113,28 +106,12 @@
             <option value="병장">병장</option>
           </select>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
       </div>
       </sub>
     </div>
   </div>
 
+  <!-- 가족사항 -->
   <div class="title">
     <hr>가족사항
     <hr>
@@ -142,25 +119,95 @@
 
   <div class="center">
     <div class="sub">
-      test
+      <div>
+        <h1 style="font-size: 20px; margin-bottom: 5px;">가족 정보입력</b></h1><br>
+        관계 <select id="family" style="margin-bottom: 7px; height: 22px;">
+          <option value="엄마">어머니</option>
+          <option value="아빠">아버지</option>
+          <option value="누나">누나</option>
+          <option value="형">형</option>
+          <option value="여동생">여동생</option>
+          <option value="남동생">남동생</option>
+        </select>
+        성명 <input id="familly_name" type="text" style="width:70px; margin-bottom: 7px; ">
+        생년월일 <input id="family_date" type="date" style="width:120px; margin-bottom: 7px; ">
+        동거여부 <select id="family_check" name="gender" style="margin-bottom: 7px; height: 22px;">
+          <option value="Y">유</option>
+          <option value="N">무</option>
+        </select>
+        <input type="button" id="add_f" value="추가">
+        <input type="button" id="remove_f" value="삭제">
+        <table id="mytable" >
+          <thead>
+            <tr>
+              <th>관계 </th>
+              <th>성명 </th>
+              <th>생년월일 </th>
+              <th>동거여부 </th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 
-    <!-- 주소찾기 API -->
-    <script type="text/JavaScript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
-    <script type="text/JavaScript" src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
-    <script type="text/javascript">
-      function openDaumZipAddress() {
-        new daum.Postcode({
-          oncomplete: function (data) {
-            jQuery("#zonecode").val(data.zonecode);
-            jQuery("#address").val(data.address);
-            jQuery("#address_etc").focus();
-            console.log(data);
-          }
-        }).open();
-      }
-    </script>
-</body>
+  <script type="text/JavaScript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
+  <script type="text/JavaScript" src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 
+  <script>
+    $('#add_f').click(function () {
+      var family = $('#family option:selected').val();
+      var name = $('#familly_name').val();
+      var date = $('#family_date').val();
+      var check = $('#family_check').val();
+      $('#mytable > tbody:last').append('<tr><td> ' + family + ' </td><td>' + name + '</td><td>' + date + '</td><td>' + check + '</td></tr>');
+    });
+
+    $('#remove_f').click(function () {
+      $('#mytable > tbody > tr:last').remove();
+    });
+  </script>
+  f
+  <!-- 주소찾기 API -->
+
+  <script type="text/javascript">
+    function openDaumZipAddress() {
+      new daum.Postcode({
+        oncomplete: function (data) {
+          jQuery("#zonecode").val(data.zonecode);
+          jQuery("#address").val(data.address);
+          jQuery("#address_etc").focus();
+          console.log(data);
+        }
+      }).open();
+    }
+  </script>
+
+  <script>
+
+    $(document).ready(function () {
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader(); //파일을 읽기 위한 FileReader객체 생성
+          reader.onload = function (e) {
+            //파일 읽어들이기를 성공했을때 호출되는 이벤트 핸들러
+            $('#blah').attr('src', e.target.result);
+            //이미지 Tag의 SRC속성에 읽어들인 File내용을 지정
+            //(아래 코드에서 읽어들인 dataURL형식)
+          }
+          reader.readAsDataURL(input.files[0]);
+          //File내용을 읽어 dataURL형식의 문자열로 저장
+        }
+      }//readURL()--
+
+      //file 양식으로 이미지를 선택(값이 변경) 되었을때 처리하는 코드
+      $("#imgInp").change(function () {
+        //alert(this.value); //선택한 이미지 경로 표시
+        readURL(this);
+      });
+    });
+  </script>
+</body>
 </html>
