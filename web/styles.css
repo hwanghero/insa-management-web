@@ -82,31 +82,6 @@ img {
     vertical-align: top;
 }
 
-table#mytable{
-    background-color: gray;
-    text-align: center;
-    border: 0px solid #444444; width: 100%; height: 30px;
-    color: white;
-    margin-top: 10px;
-}
-
-table#mytable thead *{
-    text-align: center;
-    vertical-align: middle;
-    border: 1px solid #444444;
-    height: 30px;
-    color: white;
-}
-
-table#mytable tbody *{
-  color: black;
-  background-color: white;
-  border: 1px solid #444444;
-  height: 30px;
-  text-align: center;
-  vertical-align: middle;
-}
-
 div.insabasic *{
     height: 20px;
 }
@@ -126,4 +101,29 @@ div.insabasic *{
     position: static;
     background-color: aqua; 
     top: -309px;
+}
+
+table.mytable{
+    background-color: gray;
+    text-align: center;
+    border: 0px solid #444444; width: 100%; height: 30px;
+    color: white;
+    margin-top: 10px;
+}
+
+table.mytable thead *{
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #444444;
+    height: 30px;
+    color: white;
+}
+
+table.mytable tbody *{
+  color: black;
+  background-color: white;
+  border: 1px solid #444444;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
 }
